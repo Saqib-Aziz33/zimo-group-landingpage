@@ -1,10 +1,22 @@
 // wrapper component which provides a full poge view
+// and a bottom arrow
 
-function Section({ targetId, children }) {
+import Image from "next/image";
+
+function Section({ targetId, children, className, invertedArrow, ...rest }) {
   return (
-    <div className="section">
-      <div className="container mx-auto">{children}</div>
-      {targetId ? <a href={`#${targetId}`}>+</a> : null}
+    <div className={`section ${className}`} {...rest}>
+      <div className="container mx-auto relative">{children}</div>
+
+      {/* down arrow */}
+      {targetId ? (
+        <a
+          className={`navigate-down ${invertedArrow && "invert"}`}
+          href={`#${targetId}`}
+        >
+          <Image height={80} width={40} src="/assets/down-arrow.png" alt="" />
+        </a>
+      ) : null}
     </div>
   );
 }

@@ -6,3 +6,53 @@ html{
   scroll-behavior: smooth;
   user-select: none;
 }
+
+::-webkit-scrollbar{
+  height: 5px;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: silver;
+  border-radius: 50px;
+}
+
+
+
+
+// ******************************************* components *******************************************
+.hero-img-wrapper{
+  position: absolute;
+  min-width: 340px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    opacity: 0.5;
+    filter: blur(8px);
+  }
+}
+
+
+
+
+// ******************************************* utils *******************************************
+.section{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .navigate-down{
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    padding: 1rem;
+  }
+}
