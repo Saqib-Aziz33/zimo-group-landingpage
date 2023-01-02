@@ -107,23 +107,131 @@ export default function Home() {
           </div>
         </Section>
 
-        {/* section 5 */}
+        {/* section 5 real estate */}
         <Section targetId="section6" id="section5" invertedArrow={true}>
           <div className="overlay z-0" />
           <div className="flex justify-center items-center min-h-screen relative z-10">
-            <h4 className="text-[40px] uppercase text-white">real estate</h4>
+            <h4 className="text-[40px] uppercase text-white opacity-50 tracking-wider">
+              real estate
+            </h4>
           </div>
         </Section>
 
-        {/* section 5 */}
+        {/* section 6 cars */}
         <Section targetId="section7" id="section6" invertedArrow={true}>
           <div className="overlay z-0" />
           <div className="flex justify-center items-center min-h-screen relative z-10">
-            <h4 className="text-[40px] uppercase text-white">cars</h4>
+            <h4 className="text-[40px] uppercase text-white opacity-50 tracking-wider">
+              cars
+            </h4>
           </div>
           <div className="car-models w-80 md:w-96">
             {/* eslint-disable-next-line */}
             <img src="/assets/cars-model.png" alt="" />
+          </div>
+        </Section>
+
+        {/* section 7 yatcj */}
+        <Section targetId="section8" id="section7" invertedArrow={true}>
+          <div className="overlay z-0" />
+          <div className="flex justify-center items-center min-h-screen relative z-10">
+            <h4 className="text-[40px] uppercase text-white opacity-50 tracking-wider">
+              YACHTS
+            </h4>
+          </div>
+        </Section>
+
+        {/* section 8 watches */}
+        <Section targetId="section9" id="section8" invertedArrow={true}>
+          <div className="overlay z-0" />
+          <div className="flex justify-center items-center min-h-screen relative z-10">
+            <h4 className="text-[40px] uppercase text-white opacity-50 tracking-wider">
+              Watches
+            </h4>
+          </div>
+        </Section>
+
+        {/* section 9 jets */}
+        <Section targetId="section10" id="section9" invertedArrow={true}>
+          <div className="overlay z-0" />
+          <div className="flex justify-center items-center min-h-screen relative z-10">
+            <h4 className="text-[40px] uppercase text-white opacity-50 tracking-wider">
+              Jets
+            </h4>
+          </div>
+        </Section>
+
+        {/* section 10 private island */}
+        <Section targetId="section11" id="section10" invertedArrow={true}>
+          <div className="overlay z-0" />
+          <div className="flex justify-center items-center min-h-screen relative z-10">
+            <h4 className="text-[40px] uppercase text-white opacity-50 tracking-wider">
+              PRIVATE ISLANDS
+            </h4>
+          </div>
+        </Section>
+
+        {/* section 11 diamond */}
+        <Section targetId="section12" id="section11" invertedArrow={true}>
+          <div className="overlay z-0" />
+          <div className="flex justify-center items-center min-h-screen relative z-10">
+            <h4 className="text-[40px] uppercase text-white opacity-50 tracking-wider">
+              Diamonds
+            </h4>
+          </div>
+        </Section>
+
+        {/* section 12 travel */}
+        <Section targetId="section13" id="section12" invertedArrow={true}>
+          <div className="overlay z-0" />
+          <div className="flex justify-center items-center min-h-screen relative z-10">
+            <h4 className="text-[40px] uppercase text-white opacity-50 tracking-wider">
+              Travel the world
+            </h4>
+          </div>
+        </Section>
+
+        {/* section 13 last section */}
+        <Section id="section13">
+          <div className="container mx-auto flex flex-col min-h-screen justify-center">
+            <div className="flex flex-col justify-around">
+              <div className="m-auto">
+                <Image
+                  src="/assets/zdoc.png"
+                  height={200}
+                  width={200}
+                  alt="zdoc."
+                />
+              </div>
+            </div>
+
+            <div className="py-2">
+              <p className="text-center text-[20px] md:text-[30px]">
+                Document-signing software technology that lets you sign
+                documents online.
+              </p>
+
+              {/* signatures */}
+              <div className="w-[300px] ml-auto mt-8">
+                <div className="flex justify-between border-black border-b-2 border-solid pb-4">
+                  <Image
+                    src="/assets/zdoc-arrow.png"
+                    alt="zdoc"
+                    height={60}
+                    width={45}
+                  />
+                  <Image
+                    src="/assets/signatures.png"
+                    alt="zdoc"
+                    height={70}
+                    width={200}
+                  />
+                </div>
+                <small className="text-[8px] float-right">
+                  ZD:SID 46791269900490374129
+                </small>
+              </div>
+            </div>
           </div>
         </Section>
       </main>

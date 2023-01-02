@@ -97,6 +97,65 @@ html{
 }
 
 
+#section7 {
+  background-color: black;
+
+  .overlay {
+    @include overlay();
+    background-image: url('../media/yatch.png');
+  }
+
+}
+
+#section8 {
+  background-color: black;
+
+  .overlay {
+    @include overlay();
+    background-image: url('../media/watches.png');
+  }
+
+}
+
+#section9 {
+  background-color: black;
+
+  .overlay {
+    @include overlay();
+    background-image: url('../media/jets.png');
+  }
+
+}
+
+#section10 {
+  background-color: black;
+
+  .overlay {
+    @include overlay();
+    background-image: url('../media/beach.png');
+  }
+
+}
+
+#section11 {
+  background-color: black;
+
+  .overlay {
+    @include overlay();
+    background-image: url('../media/diamonds.png');
+  }
+
+}
+
+#section12 {
+  background-color: black;
+
+  .overlay {
+    @include overlay();
+    background-image: url('../media/flags.png');
+  }
+
+}
 
 // ******************************************* utils *******************************************
 .section{
