@@ -6,8 +6,8 @@ import Image from "next/image";
 function Section({ targetId, children, className, invertedArrow, ...rest }) {
   return (
     <div className={`section ${className}`} {...rest}>
-      <div className="container mx-auto relative">{children}</div>
-
+      {/* <div className="container mx-auto relative"></div> */}
+      {children}
       {/* down arrow */}
       {targetId ? (
         <a

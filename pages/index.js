@@ -106,6 +106,26 @@ export default function Home() {
             />
           </div>
         </Section>
+
+        {/* section 5 */}
+        <Section targetId="section6" id="section5" invertedArrow={true}>
+          <div className="overlay z-0" />
+          <div className="flex justify-center items-center min-h-screen relative z-10">
+            <h4 className="text-[40px] uppercase text-white">real estate</h4>
+          </div>
+        </Section>
+
+        {/* section 5 */}
+        <Section targetId="section7" id="section6" invertedArrow={true}>
+          <div className="overlay z-0" />
+          <div className="flex justify-center items-center min-h-screen relative z-10">
+            <h4 className="text-[40px] uppercase text-white">cars</h4>
+          </div>
+          <div className="car-models w-80 md:w-96">
+            {/* eslint-disable-next-line */}
+            <img src="/assets/cars-model.png" alt="" />
+          </div>
+        </Section>
       </main>
     </>
   );

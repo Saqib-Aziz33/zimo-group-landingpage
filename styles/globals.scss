@@ -17,6 +17,18 @@ html{
 }
 
 
+@mixin overlay{
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 
 // ******************************************* components *******************************************
@@ -54,6 +66,35 @@ html{
   }
 }
 
+#section5{
+  background-color: black;
+
+  .overlay{
+    @include overlay();
+    background-image: url('../media/bg-1.png');
+  }
+    
+}
+
+#section6 {
+  background-color: black;
+
+  .overlay {
+    @include overlay();
+    background-image: url('../media/cars.png');
+  }
+.car-models{
+  position: absolute;
+  z-index: 5;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: silver;
+  border-radius: 10px;
+  img{
+    mix-blend-mode: multiply;
+  }
+}
+}
 
 
 
