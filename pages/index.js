@@ -193,44 +193,45 @@ export default function Home() {
 
         {/* section 13 last section */}
         <Section id="section13">
-          <div className="container mx-auto flex flex-col min-h-screen justify-center">
-            <div className="flex flex-col justify-around">
-              <div className="m-auto">
+          <div
+            className="container mx-auto flex flex-col"
+            style={{ minHeight: "70vh" }}
+          >
+            <div className="m-auto">
+              <Image
+                src="/assets/zdoc.png"
+                height={200}
+                width={200}
+                alt="zdoc."
+              />
+            </div>
+          </div>
+
+          <div className="py-2">
+            <p className="text-center text-[20px] md:text-[30px]">
+              Document-signing software technology that lets you sign documents
+              online.
+            </p>
+
+            {/* signatures */}
+            <div className="w-[300px] ml-auto mt-8">
+              <div className="flex justify-between border-black border-b-2 border-solid pb-4">
                 <Image
-                  src="/assets/zdoc.png"
-                  height={200}
+                  src="/assets/zdoc-arrow.png"
+                  alt="zdoc"
+                  height={60}
+                  width={45}
+                />
+                <Image
+                  src="/assets/signatures.png"
+                  alt="zdoc"
+                  height={70}
                   width={200}
-                  alt="zdoc."
                 />
               </div>
-            </div>
-
-            <div className="py-2">
-              <p className="text-center text-[20px] md:text-[30px]">
-                Document-signing software technology that lets you sign
-                documents online.
-              </p>
-
-              {/* signatures */}
-              <div className="w-[300px] ml-auto mt-8">
-                <div className="flex justify-between border-black border-b-2 border-solid pb-4">
-                  <Image
-                    src="/assets/zdoc-arrow.png"
-                    alt="zdoc"
-                    height={60}
-                    width={45}
-                  />
-                  <Image
-                    src="/assets/signatures.png"
-                    alt="zdoc"
-                    height={70}
-                    width={200}
-                  />
-                </div>
-                <small className="text-[8px] float-right">
-                  ZD:SID 46791269900490374129
-                </small>
-              </div>
+              <small className="text-[8px] float-right">
+                ZD:SID 46791269900490374129
+              </small>
             </div>
           </div>
         </Section>

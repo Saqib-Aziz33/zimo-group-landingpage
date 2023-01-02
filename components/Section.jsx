@@ -1,5 +1,6 @@
 // wrapper component which provides a full poge view
 // and a bottom arrow
+import { Link } from "react-scroll";
 
 import Image from "next/image";
 
@@ -10,12 +11,13 @@ function Section({ targetId, children, className, invertedArrow, ...rest }) {
       {children}
       {/* down arrow */}
       {targetId ? (
-        <a
+        <Link
+          to={targetId}
           className={`navigate-down ${invertedArrow && "invert"}`}
           href={`#${targetId}`}
         >
           <Image height={80} width={40} src="/assets/down-arrow.png" alt="" />
-        </a>
+        </Link>
       ) : null}
     </div>
   );
