@@ -81,17 +81,28 @@ export default function Home() {
 
         {/* section 4 */}
         <Section
-          // targetId="section5"
+          targetId="section5"
           id="section4"
           className="bg-black"
           invertedArrow={true}
         >
-          <div className=" min-h-screen py-16">
+          <div className="min-h-screen py-8">
+            <div className="forground-text">
+              {/* eslint-disable-next-line */}
+              <img src="/assets/section4-texts.png" alt="" />
+            </div>
+
+            {/* background img */}
             {/* eslint-disable-next-line */}
             <img
-              src="/assets/section4-texts.png"
-              className="w-full min-h-screen object-contain"
+              src="/assets/zimo-group.png"
               alt=""
+              className="absolute blur-sm lg:blur-md"
+              style={{
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
             />
           </div>
         </Section>

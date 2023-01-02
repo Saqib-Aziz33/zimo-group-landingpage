@@ -36,6 +36,24 @@ html{
   }
 }
 
+#section4{
+  .forground-text{
+    height: 80vh;
+    overflow: hidden;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .forground-text{
+      height: 90vh;
+    }
+  }
+}
+
 
 
 
